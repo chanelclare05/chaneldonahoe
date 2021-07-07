@@ -13,7 +13,6 @@ body {
 }
 
 #navbar {
-    overflow: hidden;
     display: flex;
     justify-content: center;
     position: sticky;
