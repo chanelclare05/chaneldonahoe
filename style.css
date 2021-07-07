@@ -1,0 +1,31 @@
+#pastel {
+    display: block;
+    margin: auto;
+    padding: 30px; 
+    width: 80%;
+    height: 80%;
+}
+
+#navbar {
+    overflow: hidden;
+    background-color: white;
+}
+
+#navbar a {
+    float: left;
+    display: block;
+    color: #E8D7FF;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
+}
+
+#navbar a:hover {
+    background-color: #FFD7D5;
+    color: white;
+
+#construction {
+    margin: 50px; 
+    width: 50%;
+    height: 50%;
+}
