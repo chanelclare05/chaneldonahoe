@@ -1,3 +1,7 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+}
+
 #pastel {
     display: block;
     margin: auto;
@@ -17,7 +21,6 @@
     background-color: rgba(255, 255, 255, 0.863);
     width: 100%;
     font-weight: 400;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 50%;
     z-index: 10;
 }
@@ -33,12 +36,35 @@
 }
 
 #navbar a:hover {
-    background-color: #fdc2faa6;
     color: white;
-    box-shadow: 10px 10px 10px 10px #fdc2fa57;
 }
 
-.intro {
+#home:hover {
+    background-color: #CFD5ED;
+    box-shadow: 4px 4px 28px 31px#cfd5edd0;
+}
+
+#blog:hover {
+    background-color: #F5C9E4;
+    box-shadow: 4px 4px 28px 31px #f5c9e4af;
+}
+
+#skills:hover {
+    background-color: #90D2E4;
+    box-shadow: 4px 4px 28px 31px#90d2e4ad;
+}
+
+#projects:hover {
+    background-color: #F5C9E4;
+    box-shadow: 4px 4px 28px 31px#f5c9e4af;
+}
+
+#media:hover {
+    background-color: #CFD5ED;
+    box-shadow: 4px 4px 28px 31px #cfd5edbb;
+}
+
+.introblock {
     display: block;
     text-align: center;
     margin: auto;
@@ -46,7 +72,6 @@
     width: 80%;
     height: auto;
     z-index: 2;
-    position: relative;
     background-color: white;
 }
 
