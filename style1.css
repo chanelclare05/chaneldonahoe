@@ -25,8 +25,8 @@ body {
     border-radius: 5%;
     width: 70%;
     padding: 2em;
-    background-color: rgba(255, 255, 255, 0.226);
-    box-shadow: 0px 0px 30px 33px rgba(236, 157, 236, 0.26);
+    background-color: rgba(255, 255, 255, 0);
+    box-shadow: 0px 0px 39px 50px rgba(247, 238, 246, 0.349);
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,7 +61,8 @@ body {
     align-items: center;
     padding: 1em;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.26);
+    background-color: rgba(255, 255, 255, 0.116);
+    box-shadow: 0px 0px 39px 50px rgba(255, 255, 255, 0.116);;
     font-size: 20px;
 }
 
@@ -71,7 +72,8 @@ body {
     text-align: center;
     width: 20%;
     text-decoration: none;
-    color: #0a85f8;
+    color: #005bb1;
+    font-weight: bold;
 }
 
 .nav-links a:hover {
@@ -177,13 +179,12 @@ h3 {
 .project {
     border-radius: 5%;
     width: 100%;
-    height: 50%;
     padding: 500px;
     background-color: rgba(255, 255, 255, 0.466);
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate( -50%);
+    transform: translate(-50%);
     text-align: center;
     background-image: url(images/Under_Construction.jpg);
     background-position: center;
@@ -246,16 +247,16 @@ h3 {
 
 @media (max-width: 800px){
     .text-box h1 {
-        font-size: 15px;
+        font-size: 20px;
     }
     .text-box p {
-        font-size: 10px;
+        font-size: 15px;
     }
     .text-box {
         border: 20%;
     }
     .button {
-        font-size: 10px;
+        font-size: 105x;
     }
     .nav div {
         font-size: 15px;
