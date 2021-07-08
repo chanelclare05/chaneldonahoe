@@ -6,7 +6,7 @@
 /* background css */
 
 body {
-    background-image: url(images/pastel_backsplash.jpg);
+    background-image: url(images/pawel-czerwinski-Qiy4hr18aGs-unsplash.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
@@ -19,10 +19,39 @@ body {
     background-size: cover;
     position: relative;
     padding-top: 1%;
-    display: ;
 }
 
+.text-box { 
+    border-radius: 5%;
+    width: 70%;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.226);
+    box-shadow: 0px 0px 30px 33px rgba(236, 157, 236, 0.26);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
 
+.text-box h1{
+    font-size: 40px;
+}
+
+.text-box p {
+    margin: 10px 0px 40px;
+    font-size: 25px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1em;
+    border-radius: 10%;
+    font-size: 15px;
+    color: black;
+}
 /* navivgation bar css */
 .nav div{
     display: flex;
@@ -32,7 +61,7 @@ body {
     align-items: center;
     padding: 1em;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.637);
+    background-color: rgba(255, 255, 255, 0.26);
     font-size: 20px;
 }
 
@@ -42,7 +71,7 @@ body {
     text-align: center;
     width: 20%;
     text-decoration: none;
-    color: #43a4ff;
+    color: #0a85f8;
 }
 
 .nav-links a:hover {
@@ -76,36 +105,7 @@ body {
     box-shadow: 4px 4px 28px 31px #cfd5ede0;
 }
 
-.text-box { 
-    border-radius: 5%;
-    width: 70%;
-    padding: 2em;
-    background-color: rgba(255, 255, 255, 0.466);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
 
-.text-box h1{
-    font-size: 40px;
-}
-
-.text-box p {
-    margin: 10px 0px 40px;
-    font-size: 25px;
-}
-
-.button {
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 700;
-    padding: 1em;
-    border-radius: 10%;
-    font-size: 15px;
-    color: black;
-}
 
 .button:hover{
     background-color: rgba(252, 249, 246, 0.555);
@@ -162,27 +162,86 @@ h3 {
     margin: 10px 0;
 }
 
-/* project */
+/* project
 .project{
     width: 80%;
     margin: auto;
     text-align: center;
     padding: 75px;
-}
+    background-image: url(images/Under_Construction.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} */
 
-.project-col {
-    flex-basis: 60%;
-    border-radius: 10px;
-    margin: 50px;
+.project {
+    border-radius: 5%;
+    width: 100%;
+    height: 50%;
+    padding: 500px;
+    background-color: rgba(255, 255, 255, 0.466);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%);
+    text-align: center;
+    background-image: url(images/Under_Construction.jpg);
+    background-position: center;
+    background-size: cover;
     position: relative;
     overflow: hidden;
-    text-align: center;
 }
 
-.project-col img {
-    width: 100%;
+.project div {
+    background-color: rgba(255, 255, 255, 0.466);
+
+}   
+
+
+.media {
+    width: 80%;
+    margin: auto;
     text-align: center;
+    padding-top: 120px;
+    padding-bottom: 200px;
 }
+
+
+.media-col {
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position:relative;
+    overflow: hidden;
+}
+
+.media-col img{
+    width: 100%;
+}
+
+.layer  {
+    background: transparent ;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    color: grey;
+    transition: 0.5s;
+}
+
+.layer:hover {
+    background: rgba(255, 255, 255, 0.692);
+    color: black;
+    font-weight: 700;
+}
+
+.row {
+    padding-top: 75px
+}
+
+
+
 
 
 @media (max-width: 800px){
