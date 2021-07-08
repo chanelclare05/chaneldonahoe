@@ -1,18 +1,27 @@
 * {
     margin: 0;
     padding: 1em 3em 1 em 3em;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 /* background css */
+
 body {
-    min-height: 100vh;
-    width: 100%;
     background-image: url(images/pastel_backsplash.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
-    padding-top: 1%;
 }
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    padding-top: 1%;
+    display: ;
+}
+
 
 /* navivgation bar css */
 .nav div{
@@ -22,7 +31,7 @@ body {
     position: sticky;
     padding: 1em;
     z-index: 10;
-    background-color: rgba(255, 255, 255, 0.199);
+    background-color: rgba(255, 255, 255, 0.637);
     font-size: 20px;
 }
 
@@ -62,5 +71,110 @@ body {
 
 #media:hover {
     background-color: #cfd5edc5;
-    box-shadow: 4px 4px 28px 31px #cfd5edc5;
+    box-shadow: 4px 4px 28px 31px #cfd5ede0;
+}
+
+.text-box { 
+    border-radius: 5%;
+    width: 70%;
+    padding: 2em;
+    background-color: rgba(255, 255, 255, 0.466);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1{
+    font-size: 40px;
+}
+
+.text-box p {
+    margin: 10px 0px 40px;
+    font-size: 25px;
+}
+
+.button {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 700;
+    padding: 1em;
+    border-radius: 10%;
+    font-size: 15px;
+    color: black;
+}
+
+.button:hover{
+    background-color: rgba(252, 249, 246, 0.555);
+    cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❤️</text></svg>") 16 0,auto; /*!emojicursor.app*/
+    transition: 0.25s;
+    color: pink;
+    box-shadow: 0px 0px 50px 22px rgba(252, 249, 246, 0.555);;
+}
+
+.skills {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+    background-color: rgba(255, 255, 255, 0.726);
+    box-shadow:0px 0px 30px 33px rgba(255, 255, 255, 0.726);
+    color:rgb(0, 0, 0)
+}
+
+h2 {
+    font-size: 45px;
+    font-weight: 600p;
+    padding: 0.5em
+}
+ul {
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+    list-style-type: none;
+}
+
+.row  {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills-col {
+    flex-basis: 40%;
+    border-radius: 5px;
+    margin-bottom: 75px;
+    padding: 15px 12px;
+    box-sizing: border-box;
+}
+
+h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+@media (max-width: 800px){
+    .text-box h1 {
+        font-size: 15px;
+    }
+    .text-box p {
+        font-size: 10px;
+    }
+    .text-box {
+        border: 20%;
+    }
+    .button {
+        font-size: 10px;
+    }
+    .nav div {
+        font-size: 15px;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .skills h2 {
+        font-size: 15px
+    }
 }
