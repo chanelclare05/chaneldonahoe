@@ -93,8 +93,8 @@ body {
 }
 
 #skills:hover {
-    background-color: #90d2e4ad;
-    box-shadow: 4px 4px 28px 31px#90d2e4ad;
+    background-color: #37b4d6ad;
+    box-shadow: 4px 4px 28px 31px#37b4d6ad;
 }
 
 #projects:hover {
@@ -121,10 +121,10 @@ body {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding: 100px;
-    background-color: rgba(255, 255, 255, 0.726);
+    padding: 150px;
+    background-color: rgb(255, 255, 255);
     box-shadow:0px 0px 30px 33px rgba(255, 255, 255, 0.726);
-    color:rgb(0, 0, 0)
+    color:rgb(92, 141, 245)
 }
 
 h2 {
@@ -164,17 +164,6 @@ h3 {
     margin: 10px 0;
 }
 
-/* project
-.project{
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 75px;
-    background-image: url(images/Under_Construction.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-} */
 
 .project {
     border-radius: 5%;
@@ -203,8 +192,9 @@ h3 {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 120px;
-    padding-bottom: 200px;
+    padding: 150px;
+    background-color: aliceblue;
+
 }
 
 
