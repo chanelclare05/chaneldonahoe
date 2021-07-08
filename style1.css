@@ -27,13 +27,15 @@ body {
 .nav div{
     display: flex;
     justify-content: space-between;
-    align-items: center;
     position: sticky;
+    top: 0;
+    align-items: center;
     padding: 1em;
     z-index: 10;
     background-color: rgba(255, 255, 255, 0.637);
     font-size: 20px;
 }
+
 
 .nav-links a {
     display: inline-block;
@@ -117,7 +119,7 @@ body {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding-top: 100px;
+    padding: 100px;
     background-color: rgba(255, 255, 255, 0.726);
     box-shadow:0px 0px 30px 33px rgba(255, 255, 255, 0.726);
     color:rgb(0, 0, 0)
@@ -137,7 +139,7 @@ ul {
 }
 
 .row  {
-    margin-top: 5%;
+    margin-top: 0%;
     display: flex;
     justify-content: space-between;
 }
@@ -146,15 +148,43 @@ ul {
     flex-basis: 40%;
     border-radius: 5px;
     margin-bottom: 75px;
-    padding: 15px 12px;
     box-sizing: border-box;
 }
 
+.skills-title {
+    text-align: right;
+    margin-bottom: 75px;
+
+}
 h3 {
     text-align: center;
     font-weight: 600;
     margin: 10px 0;
 }
+
+/* project */
+.project{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 75px;
+}
+
+.project-col {
+    flex-basis: 60%;
+    border-radius: 10px;
+    margin: 50px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+}
+
+.project-col img {
+    width: 100%;
+    text-align: center;
+}
+
+
 @media (max-width: 800px){
     .text-box h1 {
         font-size: 15px;
@@ -174,7 +204,16 @@ h3 {
     .row {
         flex-direction: column;
     }
-    .skills h2 {
-        font-size: 15px
+    .skills-title {
+        text-align: center;
+        font-size: 15px;
+    }
+    .skills-title h2{
+        text-align: center;
+        font-size: 25px;
+    }
+    .project-col h2{
+        text-align: center;
+        font-size: 25px;
     }
 }
