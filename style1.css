@@ -10,6 +10,7 @@ body {
     background-position: center;
     background-size: cover;
     position: relative;
+    background-repeat: none;
 }
 
 .header {
@@ -222,22 +223,22 @@ h3 {
     position: absolute;
     top: 0%;
     left: 0;
-    color: grey;
+    color: black;
     transition: 0.5s;
+    font-weight: 800;
+
 }
 
 .layer:hover {
     background: rgba(255, 255, 255, 0.692);
     color: black;
-    font-weight: 700;
+    font-weight: 800;
+    font-size: 2em;
 }
 
 .row {
     padding-top: 75px
 }
-
-
-
 
 
 @media (max-width: 800px){
