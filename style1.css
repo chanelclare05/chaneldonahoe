@@ -1,275 +1,256 @@
 * {
     margin: 0;
-    padding: 1em 3em 1 em 3em;
-    font-family: 'Nanum Gothic', sans-serif;
-}
-/* background css */
-
-body {
-    background-image: url(images/pawel-czerwinski-Qiy4hr18aGs-unsplash.jpg);
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    background-repeat: none;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
 }
 
-.header {
+.header{
     min-height: 100vh;
     width: 100%;
+    background-image:url(images/alyani-yang-WajET_vzPmI-unsplash.jpg);
     background-position: center;
     background-size: cover;
     position: relative;
-    padding-top: 1%;
 }
 
-.text-box { 
-    border-radius: 5%;
-    width: 70%;
-    padding: 2em;
-    background-color: rgba(255, 255, 255, 0);
-    box-shadow: 0px 0px 39px 50px rgba(247, 238, 246, 0.349);
+
+/* navbar */
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: left;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.nav-links ul li::after {
+    content: ' ';
+    width: 0%;
+    height: 2px;
+    background: #036603;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+  width: 100%;
+  box-shadow: 0px 19px 17px 9px #036603;
+}
+
+/* header textbox */
+.text-box {
+    width: 90%;
+    color: #fff;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    padding: 2em 2em;
+    background-color: #03660341;
+    box-shadow: 5px 5px 31px 16px #03660341 ;
+    
 }
-
-.text-box h1{
-    font-size: 40px;
+.text-box h1 {
+    font-size: 62px;
 }
 
 .text-box p {
-    margin: 10px 0px 40px;
-    font-size: 25px;
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
 }
 
-.button {
+.text-box a {
     display: inline-block;
     text-decoration: none;
-    font-weight: 700;
-    padding: 1em;
-    border-radius: 10%;
-    font-size: 15px;
-    color: black;
-}
-/* navivgation bar css */
-.nav div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1em;
-    z-index: 10;
-    background-color: rgba(255, 255, 255, 0.863);
-    box-shadow: 0px 0px 39px 50px rgba(255, 255, 255, 0.116);;
-    font-size: 20px;
-    z-index: 15;
+    color: #fff;
 }
 
-.nav{
-    position: sticky;
-    top: 0;
-    z-index: 15;
-}
-
-
-.nav-links a {
-    display: inline-block;
-    text-align: center;
-    width: 20%;
-    text-decoration: none;
-    color: #005bb1;
-    font-weight: bold;
-}
-
-.nav-links a:hover {
-    color: white;
-    transition: all 300ms ease-in-out;
-    font-weight: 700;
-}
-
-#home:hover {
-    background-color: #cfd5edd0;
-    box-shadow: 4px 4px 28px 31px#cfd5edd0;
-}
-
-#blog:hover {
-    background-color: #f5c9e4bb;
-    box-shadow: 4px 4px 28px 31px #f5c9e4bb;
-}
-
-#skills:hover {
-    background-color: #37b4d6ad;
-    box-shadow: 4px 4px 28px 31px#37b4d6ad;
-}
-
-#projects:hover {
-    background-color: #f5c9e4be;
-    box-shadow: 4px 4px 28px 31px#f5c9e4be;
-}
-
-#media:hover {
-    background-color: #cfd5edc5;
-    box-shadow: 4px 4px 28px 31px #cfd5ede0;
-}
-
-
-
-.button:hover{
-    background-color: rgba(252, 249, 246, 0.555);
+.text-box a:hover {
+    background-color: rgba(252, 249, 246, 0.384);
     cursor:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>❤️</text></svg>") 16 0,auto; /*!emojicursor.app*/
     transition: 0.25s;
-    color: pink;
-    box-shadow: 0px 0px 50px 22px rgba(252, 249, 246, 0.555);;
+    color: rgb(255, 149, 167);
+    box-shadow: 5px 5px 29px 25px rgba(252, 249, 246, 0.384);
 }
 
+.about {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+h2 {
+    font-size: 36px;
+    font-weight: 600px;
+}
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600px;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+/* skills */
 .skills {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding: 150px;
-    background-color: rgb(255, 255, 255);
-    box-shadow:0px 0px 30px 33px rgba(255, 255, 255, 0.726);
-    color:rgb(92, 141, 245)
+    padding-top: 100px;
 }
 
-h2 {
-    font-size: 45px;
-    font-weight: 600p;
-    padding: 0.5em
-}
-ul {
-    font-size: 20px;
-    font-weight: 300;
-    line-height: 22px;
-    padding: 10px;
-    list-style-type: none;
+.skills ul li{
+    list-style: none;
 }
 
-.row  {
-    margin-top: 0%;
+/* this one creates the columns */
+.column{
+    margin-top: 5%;
     display: flex;
     justify-content: space-between;
 }
 
-.skills-col {
-    flex-basis: 40%;
-    border-radius: 5px;
-    margin-bottom: 75px;
+.skill-col {
+    flex-basis: 31%;
+    background: #faee8165;
+    box-shadow: 0px 15px 50px 7px #faee8165 ; 
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
     box-sizing: border-box;
 }
 
-.skills-title {
-    text-align: right;
-    margin-bottom: 75px;
 
-}
-h3 {
-    text-align: center;
-    font-weight: 600;
-    margin: 10px 0;
-}
-
+/* ----projects---- */
 
 .project {
-    border-radius: 5%;
-    width: 100%;
-    padding: 500px;
-    background-color: rgba(255, 255, 255, 0.466);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%);
+    width: 80%;
+    margin: auto;
     text-align: center;
-    background-image: url(images/Under_Construction.jpg);
-    background-position: center;
-    background-size: cover;
+    padding-top: 100px;
+}
+
+.project-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
     position: relative;
     overflow: hidden;
 }
 
-.project div {
-    background-color: rgba(255, 255, 255, 0.466);
+.project-col img{
+    width: 100%;
+    display: block;
+}
 
-}   
+.project-col p{
+    padding: 0;
+    text-align: left;
+}
+
+.project-col h3{
+    margin-top: 16px;
+    margin-bottom: 25px;
+
+}
+
+.layer {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
 
 
+.layer h3 {
+    width: 100%;
+    font-weight: 500;
+    color: black;
+    font-weight: 700;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.layer:hover{
+    background: rgba(9, 77, 0, 0.514);
+}
+
+.layer:hover h3 {
+    color: white;
+    bottom: 49%;
+    opacity: 1;
+}
+
+/* media */
+/* how to add grid */
 .media {
     width: 80%;
     margin: auto;
     text-align: center;
-    padding: 150px;
-    background-color: aliceblue;
-
+    padding-top: 100px;
 }
 
-
 .media-col {
-    flex-basis: 32%;
+    flex-basis: 31%;
     border-radius: 10px;
-    margin-bottom: 30px;
-    position:relative;
-    overflow: hidden;
+    margin-bottom: 5%;
+    text-align: left;
 }
 
 .media-col img{
     width: 100%;
-}
-
-.layer  {
-    background: transparent ;
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0%;
-    left: 0;
-    color: black;
-    transition: 0.5s;
-    font-weight: 800;
-
-}
-
-.layer:hover {
-    background: rgba(255, 255, 255, 0.692);
-    color: black;
-    font-weight: 800;
-    font-size: 2em;
-}
-
-.row {
-    padding-top: 75px
+    display: block;
 }
 
 
-@media (max-width: 800px){
+@media(max-width: 700px){
+    .nav-links ul li a {
+        font-size: 12px;
+    }
     .text-box h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
+    
     .text-box p {
-        font-size: 15px;
+        margin: 10px 0 40px;
+        font-size: 12px;
     }
-    .text-box {
-        border: 20%;
+
+    .nav-links ul li  {
+        font-size: 8px;
+        padding: 1px; 
     }
-    .button {
-        font-size: 105x;
-    }
-    .nav div {
-        font-size: 15px;
-    }
-    .row {
+    .column {
         flex-direction: column;
     }
-    .skills-title {
-        text-align: center;
-        font-size: 15px;
-    }
-    .skills-title h2{
-        text-align: center;
-        font-size: 25px;
-    }
-    .project-col h2{
-        text-align: center;
-        font-size: 25px;
-    }
+
 }
