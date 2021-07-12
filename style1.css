@@ -55,11 +55,12 @@ nav {
 }
 
 /* header textbox */
-.text-box {
-    width: 90%;
+div.text-box {
     color: #fff;
     position: absolute;
-    padding: 2em 2em;
+    margin-top: 10em;
+    margin-left: 2em;
+    padding: 2% 6%;
     background-color: #03660341;
     box-shadow: 5px 5px 31px 16px #03660341 ;
     
@@ -241,12 +242,16 @@ span {
         font-size: 12px;
     }
     .text-box h1 {
-        font-size: 25px;
+        font-size: 32px;
+    }
+
+    .text-box a {
+        font-size: 16px;
     }
     
     .text-box p {
         margin: 10px 0 40px;
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .nav-links ul li  {
