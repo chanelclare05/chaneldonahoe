@@ -11,32 +11,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,700;1,100;1,200;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+<button onclick="topFunction()" id="topbutton" title="Go to top">Take me to the top!</button>
+
 <header class="header">
     <nav>
         <div class="nav-links">
             <ul>
-                <li><a href="">HOME</a></li>
-                <li><a href="">ABOUT</a></li>
-                <li><a href="">SKILLS</a></li>
-                <li><a href="">PROJECTS</a></li>
-                <li><a href="">MEDIA</a></li>
+                <li><a href="#text-box">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#project">PROJECTS</a></li>
+                <li><a href="#media">MEDIA</a></li>
             </ul>
         </div>
     </nav>
 
-    <div class="text-box">
+    <div class="text-box" id="text-box">
         <h1>Hello World.</h1>
         <p>Welcome to my website. <br><br>I'm a Software Engineer student, <br>working on #front-end #back-end development.</p>
-        <a href="">Don't be shy, click to say hi!</a>
+        <a href="mailto:fake-email@gmail.com">Don't be shy, click to say hi!</a> 
+        <!---eventually want to add a chatbox here--->
     </div>
 </header>
 
-<section class="about">
+<section class="about" id= "about">
     <h2>A Little Bit About Me</h2>
     <p> My name is Chanel! <br><br>  I am an apsiring Software Engineer based in Sydney, Australia. After a few stints in Analyst roles across Sales and Marketing teams, I figured thatI enjoyed what the developers were doing rather than what I was doing.  </p>
 </section>
 
-<section class="skills">
+<section class="skills" id="skills">
     <h2>Skills</h2>
     <p>.</p>
     <div class="column">
@@ -72,7 +76,7 @@
     </di>
 </section>
 
-<section class="project">
+<section class="project" id="project">
     <h2>Projects</h2>
     <p>Here are the projects I've worked on.</p>
 
@@ -104,7 +108,7 @@
 
 <!-- MEDIA - i would like to make this a grid -->
 
-<section class="media">
+<section class="media" id="media">
     <h2>Media</h2>
     <p>Below are blogs, videos and everything in between to document my journey and projects!</p>
     <div class="column">
@@ -135,6 +139,29 @@
             header.classList.toggle('scrolling-active', windowPosition);
         })
 </script> 
+<script>
+ //Get the button:
+mybutton = document.getElementById("topbutton");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+}
+</script>
+
+
 
 </body>
 </html>
