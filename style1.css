@@ -193,8 +193,9 @@ p {
 
 .project-col p{
     padding: 0;
-    text-align: left;
+    text-align: center;
     z-index: 20;
+
 }
 
 .project-col h3{
@@ -225,10 +226,11 @@ p {
     position: absolute;
     opacity: 0;
     transition: 0.5s;
+
 }
 
 .layer:hover{
-    background: rgba(9, 77, 0, 0.514);
+    background: rgba(6, 49, 0, 0.514);
 }
 
 .layer:hover h3 {
@@ -251,10 +253,10 @@ span {
 }
 
 .media-col {
-    flex-basis: 31%;
+    flex-basis: 30%;
     border-radius: 10px;
     margin-bottom: 5%;
-    text-align: left;
+    text-align: center;
 }
 
 .media-col img{
