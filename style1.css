@@ -202,6 +202,7 @@ p {
 .project-col h3{
     margin-top: 16px;
     margin-bottom: 25px;
+    z-index: 20;
 
 }
 
@@ -227,6 +228,7 @@ p {
     position: absolute;
     opacity: 0;
     transition: 0.5s;
+    z-index: inherit
 
 }
 
@@ -266,6 +268,11 @@ span {
     display: block;
 }
 
+.media-col:hover {
+    box-shadow: 0px 15px 50px 7px #013101 ; 
+    border-style: groove;
+    border-color: #05a505b2;
+}
  /* USING JS TAKE TO TOP BUTTON */
 #topbutton {
     display: none; /* Hidden by default */
