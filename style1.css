@@ -261,17 +261,20 @@ span {
     border-radius: 10px;
     margin-bottom: 5%;
     text-align: center;
+    transition: 0.5s;
 }
 
 .media-col img{
     width: 100%;
     display: block;
+    border-radius: 5%;
 }
 
 .media-col:hover {
     box-shadow: 0px 15px 50px 7px #013101 ; 
-    border-style: groove;
+    transform: translateY(-10px); 
     border-color: #05a505b2;
+    border-radius: 5%;
 }
  /* USING JS TAKE TO TOP BUTTON */
 #topbutton {
@@ -288,11 +291,13 @@ span {
     padding: 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 15px; /* Increase font size */
+    transition: 0.5s
   }
   
   #topbutton:hover {
     background-color: #0394037c; 
-    box-shadow: 0px 15px 50px 7px #013101 ; 
+    box-shadow: 0px 15px 50px 7px #013101 ;
+    transform: translateY(-10px); 
 
   }
 @media(max-width: 700px){
@@ -314,7 +319,7 @@ span {
 
     .nav-links ul li  {
         font-size: 8px;
-        padding: 1px; 
+        padding:  1.5em
     }
     .column {
         flex-direction: column;
