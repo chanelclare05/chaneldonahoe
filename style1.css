@@ -210,6 +210,10 @@ p {
     opacity: 1;
 }
 
+span {
+    font-weight: 700;
+}
+
 /* media */
 /* how to add grid */
 .media {
