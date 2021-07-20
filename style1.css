@@ -1,12 +1,12 @@
 * {
-    margin: 0;
-    padding: 0;
+    margin: 0; /* eliminates any gaps with the sides of the window*/
+    padding: 0; /* eliminates any gaps with the sides of the window*/
     font-family: 'Montserrat', sans-serif;
 }
 
 .header{
-    min-height: 100vh;
-    width: 100%;
+    min-height: 100vh; /* relative unit used entire background image covers what the user sees*/
+    width: auto;
     background-image:url(images/alyani-yang-WajET_vzPmI-unsplash.jpg);
     background-position: center;
     background-size: cover;
@@ -16,17 +16,16 @@
 
 /* navbar */
 nav {
-    display: flex;
-    justify-content: space-between;
+    display: block; 
     align-items: center;
     position: fixed;
-    z-index: 50;
-    width: 100%;
+    z-index: 50; /*make sure that the navbar is always on top of any other content*/
+    width: 100%; /*stretches container across entire screen*/
 }
 
 
 .nav-links {
-    flex: 1;
+    /* flex: 1; this is for when I make the navbar collapse */
     text-align: left;
     transition: 1s;
     background-color: #022e0200;
@@ -35,9 +34,9 @@ nav {
 
 .nav-links ul li {
     list-style: none;
-    display: inline-block;
+    display: inline-block; /* makes nav bar horizontal. for collapse needs to change to block to go vertically*/
     padding:  1em;
-    position: relative;
+    /* position: relative; */
 }
 .nav-links ul li a {
     color: rgb(255, 255, 255);
@@ -46,11 +45,11 @@ nav {
     padding:  1em
 }
 
-.nav-links ul li::after {
+.nav-links ul li::after {     /* after is needed for the underline and shadow effect */
     content: ' ';
     width: 0%;
     height: 2px;
-    background: #057405;
+    background: #045c04;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -61,7 +60,7 @@ nav {
   box-shadow: 0px 19px 17px 9px #057405;
 }
 
-/* scrolling js */
+/* scrolling js effect*/
 
  .scrolling-active .nav-links{
     width: 100%;
@@ -78,15 +77,16 @@ nav {
 /* header textbox */
 div.text-box {
     color: #fff;
-    position: absolute;
+    position: absolute; /* reference to the actual window, does not appear below header image*/
     margin-top: 10em;
     margin-left: 2em;
     padding: 2% 6%;
 
 }
 .text-box h1 {
-    font-size: 75px;
-    font-family: 'Petit Formal Script', cursive;}
+    font-size: 70px;
+    font-family: 'Petit Formal Script', 'cursive';
+}
 
 .text-box p {
     margin: 10px 0 40px;
@@ -122,11 +122,6 @@ h2 {
     color: #013101;
 }
 
-h3 {
-    text-align: center;
-    font-size: 20px;
-    font-weight: 600px;
-}
 
 p {
     font-size: 14px;
@@ -143,8 +138,14 @@ p {
     padding-top: 150px;
     padding-bottom: 150px;
     background-position: 100%;
-
 }
+
+h3 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600px;
+}
+
 
 .skills ul li{
     list-style: none;
@@ -162,7 +163,7 @@ p {
     background: #faee8165;
     box-shadow: 0px 15px 50px 7px #faee8165 ; 
     border-radius: 10px;
-    margin-bottom: 5%;
+    margin-bottom: 80px;
     padding: 15px 15px;
     padding-bottom: 50px;
     box-sizing: border-box;
@@ -215,49 +216,12 @@ p {
 
 }
 
-.layer {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    transition: 0.5s;
-}
-
-
-.layer h3 {
-    width: 100%;
-    font-weight: 500;
-    color: black;
-    font-weight: 700;
-    font-size: 26px;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-    z-index: inherit
-
-}
-
 .project-col:hover{
     box-shadow: 0px 15px 50px 7px #013101 ; 
     transform: translateY(-10px); 
     border-color: #05a505b2;
     border-radius: 5%;
 }
-
-/* .layer:hover h3 {
-    color: white;
-    bottom: 49%;
-    opacity: 1;
-}
-
-.layer:hover {
-    background-color: #013101a6;
-    opacity: 1;
-} */
 
 span {
     font-weight: 700;
