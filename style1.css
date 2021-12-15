@@ -160,7 +160,7 @@ h3 {
 
 .skill-col {
     flex-basis: 31%;
-    background: #faee8165;
+    background: #5db46d65;
     box-shadow: 0px 15px 50px 7px #faee8165 ; 
     border-radius: 10px;
     margin-bottom: 80px;
@@ -292,7 +292,6 @@ span {
     h2 {
         font-size: 20px;
     }
-
     
     .text-box a {
         font-size: 16px;
